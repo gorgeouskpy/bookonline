@@ -1,4 +1,13 @@
-<template>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="../dep/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./canvas.css">
+    <script src="../dep/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+</head>
+<body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 topbar">
@@ -13,75 +22,5 @@
             </div>
         </div>
     </div>
-</template>
-<script>
-    export default {
-        name:'topbar',
-        data:function(){
-            return({
-                m:'sss',
-            })
-        },
-        methods:{
-            sendform(){
-                alert('send');
-            }
-        }
-    }
-</script>
-<style scoped>
-    input::placeholder{
-    color: slategray;
-    font-family: myfont1;
-    padding: 20px;
-}
-
-@font-face{
-    font-family: myfont1;
-    src: url(/asset/ZiTiQuanXinYiGuanHeiTi2.0-2.ttf);
-}
-.topbar{
-    height: 60px;
-    background-image: linear-gradient(to top, rgba(21, 24, 44, 0.8), rgba(12, 14, 54, 0.8));
-    padding: 0;
-    position: fixed;
-    top: 0;
-}
-.icon{
-    margin: 10px;
-    margin-left: 30px;
-    color: rgb(218, 217, 174);
-}
-.topspan{
-    color: rgb(218, 217, 174);
-    font-family: myfont1;
-    padding: 15px;
-    position: absolute;
-    right: 0;
-}
-
-.topspan-1{
-    right: 109px;
-}
-.topspan-2{
-    right: 185px;
-}
-.topspan-3{
-    right: 280px;
-}
-.topspan-4{
-    right: 20px;
-}
-
-.searchbox{
-    width: 200px;
-    height: 30px;
-    margin-left: 60px;
-    border-radius: 7px;
-    background-color: #d4d8f7;
-    outline: 0;
-    border-style: none;
-    font-family: myfont1;
-    padding: 10px;
-}
-</style>
+</body>
+</html>
