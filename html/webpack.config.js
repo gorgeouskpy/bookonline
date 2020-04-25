@@ -1,4 +1,6 @@
 const path = require('path');
+const {VueLoaderPlugin} = require('vue-loader');
+const webpack = require('webpack');
 
 module.exports = {
 
@@ -7,7 +9,7 @@ module.exports = {
     entry: {
         app: './src/index.js',
         print: './src/print.js',
-        test: './src/test.vue',
+        home: './src/homepage/home.js',
     },
 
     output: {
@@ -26,6 +28,19 @@ module.exports = {
                     'css-loader',
                 ]
             },
+            {
+                test: /\.vue$/,
+                use:['vue-loader']
+            }
         ]
-    }
+    },
+
+    plugins: [
+        new VueLoaderPlugin(),
+        new webpack.ProvidePlugin({
+            "$":"jquery",
+            "jQuery":"jquery",
+            "window.jQuery":"jquery",
+        }),
+    ]
 };
