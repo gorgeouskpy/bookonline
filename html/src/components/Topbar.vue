@@ -33,7 +33,7 @@
     input::placeholder{
     color: slategray;
     font-family: myfont1;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 @font-face{
@@ -45,6 +45,7 @@
     background-image: linear-gradient(to top, rgba(21, 24, 44, 0.8), rgba(12, 14, 54, 0.8));
     padding: 0;
     position: fixed;
+    box-shadow: 6px 0px 11px #787296;
     top: 0;
 }
 .icon{
