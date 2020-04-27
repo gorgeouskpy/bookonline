@@ -1,5 +1,5 @@
 <template>
-<div id="demo" class="carousel slide col-7" data-ride="carousel">
+<div id="demo" class="carousel slide col-8" data-ride="carousel">
  
   <!-- 指示符 -->
   <ul class="carousel-indicators">
@@ -11,13 +11,13 @@
   <!-- 轮播图片 -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+      <img v-bind:src="imgsrc1">
     </div>
     <div class="carousel-item">
-      <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+      <img v-bind:src="imgsrc2">
     </div>
     <div class="carousel-item">
-      <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+      <img v-bind:src="imgsrc3">
     </div>
   </div>
  
@@ -34,9 +34,21 @@
 
 <script>
 export default {
-    name: 'carso',
+    name: 'carsouel',
+    data: function(){
+        return({
+            imgsrc1:"/asset/DuckDuckGO.jpg",
+            imgsrc2:"/asset/RubySunSet.jpg",
+            imgsrc3:"/asset/Trees.jpg",
+        })
+    }
 }
 </script>
 
 <style scoped>
+img{
+    width:100%;
+    height: 500px;
+    border-radius: 10px;
+}
 </style>

@@ -26,7 +26,7 @@
             sendform(){
                 alert('send');
             }
-        }
+        },
     }
 </script>
 <style scoped>
