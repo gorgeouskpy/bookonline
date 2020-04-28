@@ -29,6 +29,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>
  
+<div style="clear:both"></div>
 </div>
 </template>
 

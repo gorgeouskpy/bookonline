@@ -3,6 +3,7 @@
     <div class="book">
         <h5>{{book.name}}</h5>
     </div>
+    <div style="clear:both"></div>
 </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
 <div>
     <topbar class="topbar"></topbar>
-    <div class="container">
+    <div class="container-fluid subcontainer">
         <div class="row">
             <tabnav class="tabnav"></tabnav>
             <carsouel class="carsouel"></carsouel>
@@ -9,6 +9,7 @@
         <div class="row bookrow">
             <book v-for="book in bookinfo" v-bind:book="book"></book>
         </div>
+        <bottom class="bottomarea"></bottom>
     </div>
 </div>
 </template>
@@ -17,8 +18,9 @@
     import Carsouel from '../components/Carsouel.vue';
     import Tabnav from '../components/Tabnav.vue';
     import Book from '../components/Book.vue';
+    import Bottom from '../components/Bottom.vue';
     export default {
-        components:{Topbar, Tabnav, Carsouel, Book,},
+        components:{Topbar, Tabnav, Carsouel, Book, Bottom},
         data:()=>({
             bookinfo:[
                 {key:1,name:"The First Book"},
@@ -44,6 +46,7 @@
 .tabnav{
     position: absolute;
     top:100px;
+    left: 30px;
     z-index: 10;
 }
 .container{
@@ -56,9 +59,13 @@
     top:100px
 }
 .bookrow{
-    position:absolute;
-    top: 640px;
-    width: 90%;
+    width: 100%;
 }
-
+.bottomrow{
+    width: 100%;
+    position: absolute;
+}
+.bottomarea{
+    float:left;
+}
 </style>
