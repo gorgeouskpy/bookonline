@@ -25,6 +25,8 @@
 </script>
 
 <style scoped>
+.row{
+}
 .bottomarea{
     height: 300px;
     width: 100%;
@@ -52,7 +54,6 @@
 }
 .explation{
     margin: 20px;
-    width: 600px;
     font-size: 15px;
     font-weight: 200;
 }

@@ -5,6 +5,7 @@
         <div class="row">
             <tabnav class="tabnav"></tabnav>
             <carsouel class="carsouel"></carsouel>
+            <div style="clear:both"></div>
         </div>
         <div class="row bookrow">
             <book v-for="book in bookinfo" v-bind:book="book"></book>
@@ -67,5 +68,9 @@
 }
 .bottomarea{
     float:left;
+    margin-top: 100px;
+}
+.bookrow{
+    margin-top: 700px;
 }
 </style>
