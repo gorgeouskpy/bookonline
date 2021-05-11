@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "vue": "^2.6.11",
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11",
